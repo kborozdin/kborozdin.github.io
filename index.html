@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kirill's homepage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Abel|Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="outer_wrapper">
+		<div class="wrapper">
+			<div class="header">
+		    	COMPETITIVE PROGRAMMING BULLETIN
+		    </div>
+		    <ul class="top_menu">
+				<li><a href="index.html">NEWS</a></li>
+				<li><a href="algos.html">ALGOS</a></li>
+				<li><a href="photos.html">PHOTOS</a></li>
+				<li><a href="resources.html">RESOURCES</a></li>
+		    </ul>
+		    <div class="content">
+		    	<h1>News</h1>
+		    	<p>
+		    		Just to have something which makes sense I will repost some entries from Petr Mitrichev's blog.
+		    	</p>
+		    	<h2>A week with a Japanese surprise</h2>
+		    	<p>
+		    		The Open Cup held a surprise second round, the Grand Prix of Japan, last Sunday (results, top 5 on the left, overall standings). Past Glory team returned to, well, past glory with a very convincing victory &mdash; congratulations!
+		    	</p>
+		    	<p>
+					Problem B, while not very difficult algorithmically, presented a nice implementation challenge: one could write the code in 10 minutes, but could also spend an hour or more. You were given 3000 boosters with integer coordinates up to 109, each pointing in one of four cardinal directions. You can start at any booster, fly in the direction in points to the next booster (if any), then fly in the direction that booster points, and so on. As soon as you leave a booster, it disappears, so you don't change your direction when you pass through its point again. What is the maximum number of boosters you can visit if you choose your starting booster properly?
+				</p>
+				<p>
+					In my previous post, I've mentioned the medium problem from TCO 2015 Round 3B: you are given 200000 cookies (3 types pictured on the left), with two players taking those cookies in turn one by one. Each cookie has some value for the first player, and some possibly different value for the second player. It is known that the second player always takes the cookie with highest value for him, and when there are several, with the highest value for the first player among those. The first player, on the other hand, is more flexible. He can take any cookie, and his goal is to maximize the total value of the cookies he gets in the end to him minus the total value of the cookies the second player gets in the end to the second player. What is the optimal strategy for the first player?
+				</p>
+				<p>
+					I won't tell you the full solution, but I will give you a key hint. Let's forget about the goal of the first player, and simply ask ourselves: which subsets of cookies can he achieve? Let's also order the cookies by second player's priorities: first by decreasing value for the second player, then by decreasing value for the first player. It's clear now that the second player will take either the first or the second cookie in this order on the first move, one of the first four cookies on the second move, and so on. In fact, the first player can achieve any subset that has the following properties: at most one cookie from the first two, at most two cookies from the first four, at most three cookies from the first six, and so on.
+				</p>
+				<p>
+					This is not the full solution yet, but we've effectively removed the game from the problem - now we just have a question about some subsets of our set, and this question is much easier to answer.
+				</p>
+				<p>
+					Thanks for reading, and check back next week!
+				</p>
+				<h2>A week with another 6</h2>
+				<p>
+					TopCoder SRM 668 was the first contest on the week in the early hours of Wednesday (problems, results, top 5 on the left). ACRush was the highest-rated competitor, most probably practicing before the upcoming final TCO elimination round. He has placed 6th, which is exactly the last qualifying spot in the TCO - but would he be able to repeat this performance in the TCO round? Read until the end of this post to find out :)
+				</p>
+				<p>
+					Enot was the winner of this SRM and the only contestant to solve all 3 problems - very impressive! This is his first SRM victory, maybe the streams have helped him improve?
+				</p>
+				<p>
+					Codeforces Round 320 (Bayan Thanks-Round) took place a few hours later (problems, results, top 5 on the left). Quite a few contestants have managed to solve 5 problems out of 6, so in order to win one also needed to find a few bugs in solutions of competitors. Um_nik and Egor have excelled on this front with +500 points each, but Um_nik had slightly more points from his solutions and has claimed the victory - congratulations!
+				</p>
+				<p>
+					Russian Code Cup 2015 Finals was one of the "major" tournaments of the year, with $4500 up for grabs for the first place (problems in Russian, results, top 5 on the left, broadcast with commentary in Russian). The problemsetters seem to have been worried about contestants finishing early, and made the last two problems just a tiny bit too hard - quite a few contestants were close on E, and I've found out after the analysis has been published that my solution on F was not that far from the correct one, but nobody could get either problem accepted.
+				</p>
+				<p>
+					Problem D was a nice logical puzzle: you are given 200000 points on the coordinate plane, and want to find two points such that their bounding box has a positive area, but does not contain any other points inside or on the border, or report that there's no such pair. After solving the "yes/no" part, don't forget to also think about finding the specific pair :)
+				</p>
+				<p>
+					And finally, TopCoder Open 2015 Round 3B determined the last 6 participants of one more major tournament (problems, results, top 6 on the left, my screencast, Egor's screencast). Scott_wu has won with comfortable margin, but the most exciting aspect for me as a viewer was Egor's climb into the qualifying zone during the challenge phase - here's the direct link into the critical moment of his screencast.
+				</p>
+				<p>
+					The medium problem was the nicest in my opinion. You were given 200000 cookies, with two players taking those cookies in turn one by one. Each cookie has some value for the first player, and some possibly different value for the second player. It is known that the second player always takes the cookie with highest value for him, and when there are several, with the highest value for the first player among those. The first player, on the other hand, is more flexible. He can take any cookie, and his goal is to maximize the total value of the cookies he gets in the end to him minus the total value of the cookies the second player gets in the end to the second player. What is the optimal strategy for the first player?
+				</p>
+				<p>
+					Now we know the 12 finalists of TopCoder Open 2015. There's a very heavy skew towards the ex-USSR this time: Russian Federation - 7: Petr, UdH-WiNGeR, qwerty787788, kuniavski, Egor, Kankuro, Endagorion; Belarus - 2: tourist, subscriber; United States - 2: scott_wu, ecnerwal; South Africa - 1: bmerry
+				</p>
+		    </div>
+		    <div class="side_menu">
+		    	<div class="entry">
+		    		<a href="index.html"><img src="news.jpg" /></a>
+		    		News
+		    	</div>
+		    	<div class="entry">
+		    		<a href="algos.html"><img src="algos.jpg" /></a>
+		    		Algos
+		    	</div>
+		    	<div class="entry">
+		    		<a href="photos.html"><img src="photos.jpg" /></a>
+		    		Photos
+		    	</div>
+		    	<div class="entry">
+		    		<a href="resources.html"><img src="resources.jpg" /></a>
+		    		Resources
+		    	</div>
+		    </div>
+		</div>
+	    <div class="footer">
+	    	KIRILL BOROZDIN (C) 2015
+	    </div>
+	</div>
+</body>
+</html>
+

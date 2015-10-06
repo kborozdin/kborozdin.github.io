@@ -1,0 +1,139 @@
+html, body {
+	height: 100%;
+}
+div.outer_wrapper {
+	max-width: 1024px;
+	margin: auto;
+	border-left: 1px solid #f06543;
+	border-right: 1px solid #f06543;
+}
+body {
+	background-color: #e0dfd5;
+	height: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+div.header, ul.top_menu, div.side_menu, div.footer,
+		div.content > h1, div.content > h2 {
+	font-family: 'Abel', sans-serif;
+}
+div.header {
+	background-color: #f06543;
+	color: white;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 200%;
+}
+ul.top_menu, ul.top_menu > li {
+	display: inline-block;
+}
+ul.top_menu {
+	background-color: #f09d51;
+	font-size: 110%;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.top_menu > li {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 20%;
+}
+ul.top_menu > li > a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+ul.top_menu > li:hover {
+	color: white;
+	background-color: #f06543;
+}
+div.side_menu {
+	width: 20%;
+	padding: 0;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+div.side_menu > div.entry {
+	font-size: 120%;
+	text-align: center;
+	margin: 16px;
+}
+div.side_menu > div.entry img {
+	width: 100%;
+}
+div.wrapper {
+	overflow: auto;
+	height: calc(100% - 30px);
+}
+div.content {
+	float: right;
+	width: 80%;
+	padding: 0 2% 0 2%;
+	box-sizing: border-box;
+}
+div.content > img.big_img {
+	width: 100%;
+}
+div.content > div.buffer {
+	height: 30px;
+}
+div.content > h1 {
+	border-bottom: 1px dotted black;
+	text-align: center;
+}
+div.footer {
+	background-color: #f09d51;
+	font-size: 110%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 1%;
+	clear: left;
+}
+@media (max-width: 1024px) {
+	div.outer_wrapper {
+		border: none;
+	}
+}
+@media (max-width: 650px) {
+	div.header {
+		font-size: 150%;
+	}
+	ul.top_menu {
+		font-size: 90%;
+	}
+	div.side_menu {
+		width: 50%;
+		margin: auto;
+	}
+	div.content {
+		float: none;
+		width: 100%;
+	}
+	div.footer {
+		font-size: 90%;
+	}
+}
+@media (max-width: 450px) {
+	div.header {
+		font-size: 120%;
+	}
+	ul.top_menu {
+		height: auto;
+	}
+	ul.top_menu > li {
+		width: 100%;
+		display: block;
+	}
+	ul.top_menu {
+		font-size: 100%;
+	}
+	div.footer {
+		font-size: 100%;
+	}
+}
