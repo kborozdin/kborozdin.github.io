@@ -100,7 +100,7 @@ div.footer {
 		border: none;
 	}
 }
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 	div.header {
 		font-size: 150%;
 	}
@@ -119,7 +119,7 @@ div.footer {
 		font-size: 90%;
 	}
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
 	div.header {
 		font-size: 120%;
 	}
