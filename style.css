@@ -39,10 +39,12 @@ ul.top_menu {
 	padding: 0;
 }
 ul.top_menu > li {
+	display: block;
+	float: left;
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	width: 20%;
+	width: 25%;
 }
 ul.top_menu > li > a {
 	display: block;
@@ -128,7 +130,7 @@ div.footer {
 	}
 	ul.top_menu > li {
 		width: 100%;
-		display: block;
+		float: none;
 	}
 	ul.top_menu {
 		font-size: 100%;
