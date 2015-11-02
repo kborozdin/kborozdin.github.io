@@ -1,5 +1,5 @@
 THUMBS = 3;
-TOTAL = 4;
+TOTAL = 5;
 
 function parse_thumb_number(cur)
 {
