@@ -5,6 +5,8 @@
 	<title>Kirill's homepage</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Abel|Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="gallery.js"></script>
 </head>
 <body>
 	<div class="outer_wrapper">
@@ -19,13 +21,21 @@
 				<li><a href="resources.html">RESOURCES</a></li>
 		    </ul>
 		    <div class="content">
+		    	<div class="splash"></div>
+		    	<input type="button" class="splashed left" value="<" />
+		    	<input type="button" class="splashed close" value="X" />
+		    	<input type="button" class="splashed right" value=">" />
+				<img class="splashed big_image" />
 		    	<h1>Photos</h1>
-		    	<h2>Junior's Championship 2015</h2>
-		    	<img class="big_img" src="contest3.jpg" />
-		    	<h2>Urals Championship 2015</h2>
-		    	<img class="big_img" src="contest2.jpg" />
-		    	<h2>1/8 of ACM ICPC Finals 2015</h2>
-		    	<img class="big_img" src="contest1.jpg" />
+		    	<div class="thumbs">
+		    		<input type="button" class="thumb_control left" value="<" />
+		    		<div class="wrawra">
+			    		<img class="small_image" id="small_image1" src="contest1_thumb.jpg" />
+			    		<img class="small_image" id="small_image2" src="contest2_thumb.jpg" />
+			    		<img class="small_image" id="small_image3" src="contest3_thumb.jpg" />
+		    		</div>
+		    		<input type="button" class="thumb_control right" value=">" />
+		    	</div>
 		    </div>
 		    <div class="side_menu">
 		    	<div class="entry">

@@ -139,3 +139,99 @@ div.footer {
 		font-size: 100%;
 	}
 }
+div.thumbs {
+	height: 240px;
+	text-align: center;
+}
+div.wrawra {
+	display: inline-block;
+	height: 100%;
+	width: 90%;
+	margin: auto;
+}
+img.small_image {
+	margin: 1%;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-height: 100%;
+	width: 30%;
+	cursor: pointer;
+}
+img.small_image:hover {
+	box-shadow: 0 0 5px 2px #f09d51;
+}
+input.thumb_control {
+	background-color: #f09d51;
+	border: none;
+	height: 100%;
+	cursor: pointer;
+}
+input.thumb_control:hover {
+	background-color: #f06543;
+}
+input.thumb_control.left {
+	//margin-right: 4px;
+	width: 4%;
+	float: left;
+}
+input.thumb_control.right {;
+	//margin-left: 4px;
+	width: 4%;
+	float: right;
+}
+div.splash {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	opacity: 0.7;
+	background-color: black;
+}
+.splashed {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	z-index: 20;
+	position: fixed;
+	display: none;
+}
+.splashed.big_image {
+	cursor: auto;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	max-height: 50%;
+}
+.splashed.close {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 20%;
+	height: 10%;
+	top: 15%;
+	left: 40%;
+}
+.splashed.left, .splashed.right {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.splashed.close:hover {
+	background-color: rgba(0, 0, 0, 1);
+}
+.splashed.left {
+	width: 15%;
+	height: 10%;
+	top: 15%;
+	left: 25%;
+}
+.splashed.left:hover, .splashed.right:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.splashed.right {
+	width: 15%;
+	height: 10%;
+	top: 15%;
+	left: 60%;
+}
