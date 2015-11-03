@@ -24,7 +24,10 @@ function with_big_number(cur)
 function set_thumbs(cur)
 {
 	for (var i = 1; i <= THUMBS; i++)
+	{
+		$("#small_image" + i).attr("src", "");
 		$("#small_image" + i).attr("src", with_thumb_number(cur + i - 1));
+	}
 }
 
 function cur_in_limits(cur)
